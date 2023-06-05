@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- IMPORT RESET CSS -->
+  <link rel="stylesheet" href="css/css-reset.css">
+  <!-- IMPORT STYLE CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- IMPORT FONT AWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Troll Gym | das Gym für Trolle</title>
+</head>
+
+<body>
+<div class="hero">
+    <div class="navbar">
+        <div class="logo-container">
+      <a href="#"><img src="images/Logo-Light-Troll.png" alt="" class="logo" /></a></div>
+      <nav>
+        <ul>
+          <li><a href="#anchor-home">Startseite</a></li>
+          <li><a href="#anchor-prices">Preise</a></li>
+          <li><a href="#anchor-courses">Kurse</a></li>
+          <li><a href="#anchor-devices">Geräte</a></li>
+          <li><a href="#anchor-studio">Unser Studio</a></li>
+          <li><a href="#anchor-contact">Kontakt</a></li>
+        </ul>
+      </nav>
+      <button class="button-main" onclick="mitMachen()">Jetzt mitmachen!</button>
+    </div>
+    <header>
+      <div class="header-box">
+        <h1>Troll Gym</h1>
+        <h2>Das Gym für alle Trolle in deiner Stadt</h2>
+      </div>
+    </header>
+</div>
+
+  <div class="section gradient-bg">
+    <div class="title-container">
+      <h3 class="main-brand-color">Preise</h3>
+      <p class="main-brand-color">Wähle deinen Geldbeutel</p>
+    </div>
+    <div class="priceTable-container">
+      <div class="priceTable-card priceTable-cardBottom">
+        <div class="priceTable-head">
+          <img src="images/Price-c.jpg" alt="Muskolöser Troll" title="Muskolöser Troll" />
+          <div class="circle">
+            <p>€0,17</p>
+            <p>täglich</p>
+          </div>
+        </div>
+        <div class="priceTable-text">
+          <p>Sparfuchs</p>
+          <ul>
+            <li>
+              <i class="fa-solid fa-check"></i>Zugang zwischen 10:00 & 10:30
+            </li>
+            <li><i class="fa-solid fa-check"></i>Duschen aber nicht warm</li>
+            <li>
+              <i class="fa-solid fa-check"></i>Geräte, für Kinder
+            </li>
+            <li><i class="fa-solid fa-check"></i>Hobby-Trainer</li>
+            <li>
+              <i class="fa-solid fa-check"></i>Nur Tip-Cola, kein Wasser
+            </li>
+          </ul>
+          <div class="flexbox-justify-center">
+            <a href="https://www.google.de">
+              <button class="button-primary">Jetzt mitmachen!</button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="priceTable-card priceTable-cardBottom" id="anchor-prices">
+        <div class="priceTable-head">
+          <img src="images/Price-a.jpg" alt="Muskolöser Troll" title="Muskolöser Troll" />
+          <div class="circle">
+            <p>€10</p>
+            <p>wöchentlich</p>
+          </div>
+        </div>
+        <div class="priceTable-text">
+          <p>Man in the Middle</p>
+          <ul>
+            <li>
+              <i class="fa-solid fa-check"></i>Zugang nur unter der Woche
+            </li>
+            <li><i class="fa-solid fa-check"></i>Duschen lauwarm</li>
+            <li>
+              <i class="fa-solid fa-check"></i>Geräte, nur die ausgelutschten
+            </li>
+            <li><i class="fa-solid fa-check"></i>Praktikanten-Trainer</li>
+            <li>
+              <i class="fa-solid fa-check"></i>Wasser
+            </li>
+          </ul>
+          <div class="flexbox-justify-center">
+            <a href="#"><button class="button-primary">Jetzt mitmachen!</button></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="priceTable-card priceTable-cardBottom">
+        <div class="priceTable-head">
+          <img src="images/Price-b.jpg" alt="Muskolöser Troll" title="Muskolöser Troll" />
+          <div class="circle">
+            <p>€150</p>
+            <p>monatlich</p>
+          </div>
+        </div>
+        <div class="priceTable-text">
+          <p>TROLL-BOSS</p>
+          <ul>
+            <li><i class="fa-solid fa-check"></i>Zugang 24/7</li>
+            <li><i class="fa-solid fa-check"></i>Heiß duschen</li>
+            <li><i class="fa-solid fa-check"></i>Alle neuen Top Geräte</li>
+            <li><i class="fa-solid fa-check"></i>Ausgebildeter Trainer</li>
+            <li><i class="fa-solid fa-check"></i>Shampagna & Kaviar</li>
+          </ul>
+          <div class="flexbox-justify-center">
+            <a href="#"><button class="button-primary">Jetzt mitmachen!</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section courses-bg" id="anchor-courses">
+    <div class="title-container">
+      <h3>Kurse</h3>
+      <p>Training mit anderen Trollen zusammen</p>
+    </div>
+    <table class="main-table">
+      <tr>
+        <th class="color-top">TAG & ZEIT</th>
+        <th class="color-top">10:00</th>
+        <th class="color-top">11:00</th>
+        <th class="color-top">12:00</th>
+        <th class="color-top">15:00</th>
+        <th class="color-top">18:00</th>
+        <th class="color-top">20:00</th>
+      </tr>
+      <tr>
+        <th class="color-left">MONTAG</th>
+        <th>Reifen schubsen</th>
+        <th></th>
+        <th class="color-top">TROLL YOGA</th>
+        <th></th>
+        <th>Laserschwertkampf</th>
+        <th></th>
+      </tr>
+      <tr>
+        <th class="color-left">DIENSTAG</th>
+        <th>Laufband Team 2</th>
+        <th>Reifen schubsen</th>
+        <th></th>
+        <th class="color-top">TROLL YOGA</th>
+        <th></th>
+        <th>Laserschwertkampf</th>
+      </tr>
+      <tr>
+        <th class="color-left">MITTWOCH</th>
+        <th>Boxen</th>
+        <th></th>
+        <th>Reifen schubsen</th>
+        <th></th>
+        <th class="color-top">TROLL YOGA</th>
+        <th>Laufband Team 2</th>
+      </tr>
+      <tr>
+        <th class="color-left">TAG DES DÖNERS</th>
+        <th></th>
+        <th>Palace of Kebap</th>
+        <th></th>
+        <th>Palace of Kebap</th>
+        <th></th>
+        <th>Palace of Kebap</th>
+      </tr>
+      <tr>
+        <th class="color-left">FREITAG</th>
+        <th class="color-top">TROLL YOGA</th>
+        <th></th>
+        <th>Laserschwertkampf</th>
+        <th></th>
+        <th>Reifen schubsen</th>
+        <th></th>
+      </tr>
+      <tr>
+        <th class="color-left">SAMSTAG</th>
+        <th>Gemeinsames Frühstück</th>
+        <th></th>
+        <th></th>
+        <th>XBOX 360 Kinect</th>
+        <th></th>
+        <th>XBOX 360 Kinect</th>
+      </tr>
+      <tr>
+        <th class="color-left">SONNTAG</th>
+        <th>Gemeinsames Frühstück</th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+    </table>
+  </div>
+  
+  <div class="section gradient-bg" id="anchor-geraete">
+    <div class="title-container">
+      <h3>Geräte</h3>
+      <p>Equipment für alle harten Trolls</p>
+    </div>
+    <div class="geraete-container">
+      <div class="geraete-card">
+        <div class="geraete-bg-box geraete-bg-image-kurzhanteln">
+          <div class="geraete-box">
+            <h4>Kurzhanteln</h4>
+            <p>Kurzhanteln haben wir in vielen verschiedenen Farben, auch in gelb😉</p>
+            <button class="button-primary">Farbe reservieren!</button>
+          </div>
+        </div>
+      </div>
+      <div class="geraete-card">
+        <div class="geraete-bg-box geraete-bg-image-langhantel">
+          <div class="geraete-box">
+            <h4>Langhanteln</h4>
+            <p>Wir haben die schwersten Langhanteln auf dem Planeten</p>
+            <button class="button-primary">Unfallversicherungen</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="geraete-container">
+      <div class="geraete-card">
+        <div class="geraete-bg-box geraete-bg-image-crosstrainer">
+          <div class="geraete-box">
+            <h4>Crosstrainer</h4>
+            <p>Fahrrad fahren kannst du nicht nur draußen, komm vorbei und fahre mit den Trolls aus deiner Umgebung zusammen Crosstrainer</p>
+            <button class="button-primary">Helm bestellen</button>
+          </div>
+        </div>
+      </div>
+      <div class="geraete-card">
+        <div class="geraete-bg-box geraete-bg-image-kettlebell">
+          <div class="geraete-box">
+            <h4>Kettlebell</h4>
+            <p>ERROR 404</p>
+            <button class="button-primary">[shortcode-404]</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="geraete-container">
+      <div class="geraete-card">
+        <div class="geraete-bg-box geraete-bg-image-haengen">
+          <div class="geraete-box">
+            <h4>Abhängen</h4>
+            <p>Mal wieder bock abzuhängen?<br>Aber keine Lust auf Kinder-Spielplätze?<br>Komm vorbei, bei uns bekommst du den richtigen Hänger</p>
+            <button class="button-primary">Jetzt mitmachen!</button>
+          </div>
+        </div>
+      </div>
+      <div class="geraete-card">
+        <div class="geraete-bg-box geraete-bg-image-isomatte">
+          <div class="geraete-box">
+            <h4>Isomatten</h4>
+            <p>Weiche, harte oder fluffige Isomatten, wir haben fast jede Konsistenz, hier für dich.</p>
+            <button class="button-primary">Jetzt mitmachen!</button>
+          </div>
+        </div>
+      </div>
+    </div> 
+  </div>  
+
+    <script>
+      function mitMachen() {
+        console.log("Hallo Troll");
+      } console.log("Hallo Troll");
+    </script>
+
+</body>
+
+</html>
